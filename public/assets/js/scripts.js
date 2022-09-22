@@ -76,6 +76,33 @@ jQuery(function ($) {
     lazyLoad: true,
   });
 
+  // 5. event-gallery slider
+  $(".event-gallery").owlCarousel({
+    loop: false,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: false,
+    lazyLoad: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 1,
+      },
+      991: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+      1920: {
+        items: 3,
+      },
+    },
+  });
+
   // 2. speaker-testimoniall slider
   $(".speaker-testimonial").owlCarousel({
     loop: true,

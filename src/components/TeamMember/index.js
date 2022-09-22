@@ -21,56 +21,23 @@ class TeamMember extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section id="team" className="team-member-section pb-100">
+        <section id="team" className="team-member-section pb-50 pt-3">
           <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-7 col-md-8">
-                <div className="section-heading text-center mb-5">
-                  <h2>Our team members</h2>
-                  <p className="lead">
-                    Following reasons show advantages of adding AppCo to your
-                    lead pages, demos and checkouts
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
+            <div className="owl-carousel owl-theme event-gallery dot-indicator">
               {(this.state.teamMember.members || []).map((member, index) => {
                 return (
-                  <div className="col-lg-3 col-sm-6" key={index}>
+                  <div className="item" key={index}>
                     <div className="single-team-member position-relative">
                       <div className="team-image">
                         <img
-                          src={member.image}
+                          src="img/images/galleryimg.png"
                           alt="Team Members"
-                          className="img-fluid rounded-circle"
+                          className="img-fluid"
                         />
                       </div>
-                      <div className="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
-                        <h5 className="mb-0">{member.name}</h5>
-                        <h6>{member.designation}</h6>
-                        <ul className="list-inline team-social social-icon mt-4 text-white">
-                          <li className="list-inline-item">
-                            <a href="/#">
-                              <span className="ti-facebook"></span>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="/#">
-                              <span className="ti-twitter"></span>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="/#">
-                              <span className="ti-github"></span>
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a href="/#">
-                              <span className="ti-dribbble"></span>
-                            </a>
-                          </li>
-                        </ul>
+                      <div className="team-info text-white d-flex flex-column align-items-center justify-content-center">
+                        <h5 className="mb-2">Photo Gallery</h5>
+                        <h6>Lorem Ipsum Event</h6>
                       </div>
                     </div>
                   </div>

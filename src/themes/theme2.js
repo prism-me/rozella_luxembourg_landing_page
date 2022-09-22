@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Header from "../components/Header/header";
 import HeroSection from "../components/HeroSection/HeroSection2";
 import PromoSection from "../components/PromoSection/Promo2";
@@ -9,7 +8,6 @@ import VideoSection from "../components/Video";
 import PricingSection from "../components/Pricing";
 import Testimonial from "../components/Testimonial";
 import Screenshots from "../components/Screenshots";
-import FaqSection from "../components/Faq";
 import TeamMember from "../components/TeamMember";
 import Partners from "../components/Partners/index";
 import ContactSection from "../components/Contact";
@@ -30,10 +28,9 @@ class Theme extends Component {
           <PricingSection />
           <Partners />
           <AboutSection />
-          <FeatureSection />
-          <VideoSection showDownloadBtn={true} />
+          <VideoSection />
           <TeamMember />
-          <FaqSection />
+          <FeatureSection />
         </div>
         <MapSection />
         <FooterSection />

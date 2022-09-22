@@ -17,7 +17,7 @@ class Contact extends Component {
       disableContactBtn: false,
       contactBtnText: "Send Message",
       contact: {},
-      countrycodeData: {}
+      countrycodeData: {},
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,7 +27,7 @@ class Contact extends Component {
    * When we click on Send button, changeBtnText function will help to change text
    * @param contactBtnText
    */
-  changeBtnText = contactBtnText => {
+  changeBtnText = (contactBtnText) => {
     this.setState({ contactBtnText });
   };
 
@@ -81,7 +81,7 @@ class Contact extends Component {
           email: "",
           phone: "",
           agreement: "",
-          country_code: ""
+          country_code: "",
         });
       }.bind(this),
       3000
@@ -93,26 +93,28 @@ class Contact extends Component {
      * Your ajax will goes here to get data then call setState
      */
     this.setState({
-      contact: _data.contact
+      contact: _data.contact,
     });
 
     this.setState({
-      countrycodeData: CountryCode
+      countrycodeData: CountryCode,
     });
-
   }
 
   render() {
     return (
       <React.Fragment>
-        <section id="contact" className={"contact-us ptb-100 "}>
+        <section id="register" className={"contact-us ptb-50 "}>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
                 <div className="section-heading">
-                  <h3 className="title">Reserve<span> Your Seat</span></h3>
+                  <h3 className="title">
+                    Reserve<span> Your Seat</span>
+                  </h3>
                   <p>
-                    Register now & gain access to all key players in the Dubai real estate market under one roof.
+                    Register now & gain access to all key players in the Dubai
+                    real estate market under one roof.
                   </p>
                 </div>
                 <div className="footer-address">
@@ -121,7 +123,8 @@ class Contact extends Component {
                       <span>Meet Top Tier</span> Investors, Buyers & Regulators
                     </li>
                     <li>
-                      <span>Get Briefed</span> on The Latest Trends and Opportunities
+                      <span>Get Briefed</span> on The Latest Trends and
+                      Opportunities
                     </li>
                     <li>
                       <span>Discuss Business</span> with the Right People
@@ -144,7 +147,9 @@ class Contact extends Component {
                       <div className="form-group">
                         <input
                           value={this.state.name}
-                          onChange={e => this.handleFormValueChange("name", e)}
+                          onChange={(e) =>
+                            this.handleFormValueChange("name", e)
+                          }
                           type="text"
                           className="form-control"
                           name="name"
@@ -157,7 +162,9 @@ class Contact extends Component {
                       <div className="form-group">
                         <input
                           value={this.state.email}
-                          onChange={e => this.handleFormValueChange("email", e)}
+                          onChange={(e) =>
+                            this.handleFormValueChange("email", e)
+                          }
                           type="email"
                           className="form-control"
                           name="email"
@@ -170,19 +177,18 @@ class Contact extends Component {
                       <div className="form-group">
                         <select
                           value={this.state.country_code}
-                          onChange={e => this.handleFormValueChange("country_code", e)}
+                          onChange={(e) =>
+                            this.handleFormValueChange("country_code", e)
+                          }
                           name="country_code"
                           className="form-control"
                           required="required"
                         >
-                          {
-                            CountryCode.map((x, i) => (
-                              <option value={x.dial_code} key={i}>
-                                {x.dial_code} - {x.name}
-                              </option>
-                            ))
-                          }
-
+                          {CountryCode.map((x, i) => (
+                            <option value={x.dial_code} key={i}>
+                              {x.dial_code} - {x.name}
+                            </option>
+                          ))}
                         </select>
                       </div>
                     </div>
@@ -190,7 +196,9 @@ class Contact extends Component {
                       <div className="form-group">
                         <input
                           value={this.state.phone}
-                          onChange={e => this.handleFormValueChange("phone", e)}
+                          onChange={(e) =>
+                            this.handleFormValueChange("phone", e)
+                          }
                           type="text"
                           name="phone"
                           className="form-control"
@@ -201,10 +209,20 @@ class Contact extends Component {
                     </div>
                     <div className="col-12">
                       <div className="form-group">
-                        <input type="radio" id="agreement" name="agreement"
+                        <input
+                          type="radio"
+                          id="agreement"
+                          name="agreement"
                           className="mr-2"
-                          onChange={e => this.handleFormValueChange("agreement", e)} value="agree" />
-                        <label for="agreement">I accept the terms of the User Agreement and Privacy Policy</label>
+                          onChange={(e) =>
+                            this.handleFormValueChange("agreement", e)
+                          }
+                          value="agree"
+                        />
+                        <label for="agreement">
+                          I accept the terms of the User Agreement and Privacy
+                          Policy
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -227,13 +245,13 @@ class Contact extends Component {
                 <p className="form-message"></p>
               </div>
             </div>
-          </div >
-        </section >
-      </React.Fragment >
+          </div>
+        </section>
+      </React.Fragment>
     );
   }
 }
 
-export default connect(state => ({
-  state
+export default connect((state) => ({
+  state,
 }))(Contact);

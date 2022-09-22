@@ -22,7 +22,7 @@ export default class Pricing extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section id="pricing" className={"package-section pb-100 "}>
+        <section id="pricing" className={"package-section pb-50"}>
           <div className="container">
             <div className="row">
               <div className="col-md-8 mb-3">
@@ -31,7 +31,7 @@ export default class Pricing extends React.Component {
               </div>
             </div>
             <div
-              className="owl-carousel owl-theme speaker-testimonial ptb-100 px-5"
+              className="owl-carousel owl-theme speaker-testimonial ptb-50 px-5"
               style={{
                 backgroundImage: "url('img/images/speakerbg.jpg')",
                 backgroundRepeat: "no-repeat",

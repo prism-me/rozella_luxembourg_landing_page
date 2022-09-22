@@ -284,20 +284,40 @@ b {
 /*========================================
         03. PRE DEFINE CLASS CSS
 ==========================================*/
-.ptb-100 {
-  padding: 100px 0;
+.ptb-50 {
+  padding: 50px 0;
 }
 
-.pt-100 {
-  padding-top: 100px;
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.ptb-120 {
+  padding: 120px 0;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.ptb-150 {
+  padding: 150px 0;
+}
+
+.pb-150 {
+  padding-bottom: 150px;
 }
 
 .pt-150 {
   padding-top: 150px;
-}
-
-.pb-100 {
-  padding-bottom: 100px;
 }
 
 .mt--120 {
@@ -350,8 +370,10 @@ b {
 }
 
 .icon-color-2 {
-  background-color: #c6e6fd;
-  color: #63b0e3;
+  /* background-color: #c6e6fd;
+  color: #63b0e3; */
+  background-color: #ffffff;
+  color: #01052d;
 }
 
 .icon-color-3 {
@@ -767,16 +789,27 @@ select.form-control.has-value {
     left: 15px;
   }
 
-  .ptb-100 {
-    padding: 55px 0;
+  .ptb-50 {
+    padding: 45px 0;
   }
 
-  .pt-100 {
-    padding-top: 55px;
+  .pt-50 {
+    padding-top: 45px;
   }
 
-  .pb-100 {
-    padding-bottom: 55px;
+  .pb-50 {
+    padding-bottom: 45px;
+  }
+  .ptb-120 {
+    padding: 65px 0;
+  }
+
+  .pt-120 {
+    padding-top: 65px;
+  }
+
+  .pb-120 {
+    padding-bottom: 65px;
   }
 }
 
@@ -821,6 +854,7 @@ select.form-control.has-value {
   font-weight: 400;
   font-size: 25px;
   color: #ffffff;
+  margin-bottom: 3.5rem;
 }
 
 .hero-content-left .bannerBtn {
@@ -2115,12 +2149,15 @@ select.form-control.has-value {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
+  width: 60px;
+  height: 60px;
+  padding: 0.5rem;
 }
 
 .icon span {
@@ -2763,12 +2800,9 @@ blockquote:before {
 /*our team css*/
 .single-team-member .team-info {
   background-image: linear-gradient(
-    to right,
-    rgba(32, 40, 119, 0.85),
-    rgba(55, 46, 149, 0.9),
-    rgba(83, 49, 177, 0.85),
-    rgba(114, 48, 205, 0.8),
-    rgba(150, 41, 230, 0.8)
+    0deg,
+    rgba(1, 5, 45, 0.6),
+    rgba(1, 5, 45, 0.6)
   );
   opacity: 0;
   visibility: hidden;
@@ -2795,11 +2829,13 @@ blockquote:before {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
   color: inherit;
+  font-size: 25px;
 }
 
 .team-info h6 {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
+  font-size: 18px;
 }
 
 .team-info h5,
@@ -3812,6 +3848,36 @@ button,
   padding-right: 3rem;
 }
 
+.about-us .viewdetailsbtn {
+  color: #ffffff;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.about-us .viewdetailsbtn:hover {
+  color: #9629e6;
+  border-bottom: 1px solid #9629e6;
+}
+
+.about-us .viewdetailsbtn:focus {
+  outline: 0;
+}
+
+.about-us .viewdetailsbtn .btnicon {
+  display: none;
+  font-size: 12px;
+  padding-left: 0.2rem;
+}
+
+.about-us .viewdetailsbtn:hover .btnicon {
+  display: inline;
+}
+
 .testimonial-section .maintitle {
   color: #ffffff;
   font-weight: 900;
@@ -3838,7 +3904,6 @@ button,
 .testimonial-section .detail {
   color: #ffffff;
   text-align: justify;
-  padding-right: 3rem;
   letter-spacing: normal;
 }
 
@@ -3876,6 +3941,115 @@ button,
 }
 
 .partners-section .hrstyle {
+  border: 0.5px solid #ffffff;
+  margin-top: 0;
+  width: 20%;
+  margin-bottom: 2rem;
+  float: left;
+}
+
+.feature-section .mainsubtitle {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.feature-section .maintitle {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.feature-section .hrstyle {
+  border: 0.5px solid #ffffff;
+  margin-top: 0;
+  width: 20%;
+  margin-bottom: 2rem;
+  float: left;
+}
+
+.feature-section .detail {
+  clear: both;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.feature-section .icon-text h5 {
+  color: #ffffff;
+}
+
+.feature-section .icon-text p {
+  color: #ffffff;
+}
+
+.feature-section .icon-text .viewdetailsbtn {
+  color: #ffffff;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  margin-top: 1.5rem;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.feature-section .icon-text .viewdetailsbtn:hover {
+  color: #9629e6;
+  border-bottom: 1px solid #9629e6;
+}
+
+.feature-section .icon-text .viewdetailsbtn:focus {
+  outline: 0;
+}
+
+.feature-section .iconDiv {
+  border-right: 1px solid #fff;
+  height: 220px;
+}
+
+.feature-section .icon-text .viewdetailsbtn .btnicon {
+  display: none;
+  font-size: 12px;
+  padding-left: 0.2rem;
+}
+
+.feature-section .icon-text .viewdetailsbtn:hover .btnicon {
+  display: inline;
+}
+
+.screenshots-section .maintitle {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.screenshots-section .hrstyle {
+  border: 0.5px solid #ffffff;
+  margin-top: 0;
+  width: 20%;
+  margin-bottom: 2rem;
+  float: center;
+}
+
+.screenshots-section .detail {
+  text-align: center;
+  clear: both;
+  color: #ffffff;
+}
+
+.video-promo .maintitle {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.video-promo .hrstyle {
   border: 0.5px solid #ffffff;
   margin-top: 0;
   width: 20%;

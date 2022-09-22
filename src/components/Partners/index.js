@@ -23,7 +23,7 @@ class Partners extends React.Component {
       <React.Fragment>
         <section
           id="team"
-          className="partners-section pb-100"
+          className="partners-section pb-50"
           style={{
             backgroundImage: "url('img/images/bgwing.png')",
             backgroundRepeat: "no-repeat",

@@ -21,7 +21,7 @@ class Testimonial extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className={"testimonial-section  ptb-100"}>
+        <section className={"testimonial-section  ptb-50"}>
           <div className="container">
             <div className="owl-carousel owl-theme client-testimonial dot-indicator">
               {(this.state.testimonial.comments || []).map(
