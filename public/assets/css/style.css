@@ -2431,8 +2431,8 @@ select.form-control.has-value {
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  line-height: 120px;
-  margin: 0 auto;
+  /* line-height: 120px; */
+  /* margin: 0 auto; */
 }
 
 .font-weight-bolder {
@@ -2810,7 +2810,7 @@ blockquote:before {
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-.team-image img {
+.team-image .teamImgstyle {
   display: block;
   height: 100%;
   width: 100%;

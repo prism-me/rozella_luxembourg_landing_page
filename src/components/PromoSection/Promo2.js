@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 class PromoSection extends React.Component {
   constructor(props) {
@@ -21,12 +23,20 @@ class PromoSection extends React.Component {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-content-right">
-                  <img
+                  <LazyLoadImage
+                    placeholderSrc="img/images/ceo.png"
+                    effect="blur"
+                    width="500"
+                    alt="about us"
+                    className="img-fluid"
+                    src="img/images/ceo.png"
+                  />
+                  {/* <img
                     src="img/images/ceo.png"
                     width="500"
                     alt="about us"
                     className="img-fluid"
-                  />
+                  /> */}
                 </div>
               </div>
               <div className="col-lg-6">

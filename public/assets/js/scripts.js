@@ -105,11 +105,11 @@ jQuery(function ($) {
 
   // 2. speaker-testimoniall slider
   $(".speaker-testimonial").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 30,
     dots: false,
     nav: false,
-    autoplay: true,
+    autoplay: false,
     responsive: {
       0: {
         items: 1,

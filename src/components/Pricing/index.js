@@ -1,5 +1,7 @@
 import React from "react";
 import _data from "../../data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default class Pricing extends React.Component {
   constructor(props) {
@@ -43,11 +45,18 @@ export default class Pricing extends React.Component {
                 return (
                   <div className="item" key={index}>
                     <div className={"card text-center single-pricing-pack"}>
-                      <div className="pricing-img my-4">
-                        <img
+                      <div className="pricing-img mt-5 mb-2">
+                        {/* <img
                           src="img/images/quotemarks.png"
                           alt="pricing img"
                           className="img-fluid"
+                        /> */}
+                        <LazyLoadImage
+                          placeholderSrc="img/images/quotemarks.png"
+                          effect="blur"
+                          alt="pricing img"
+                          className="img-fluid"
+                          src="img/images/quotemarks.png"
                         />
                       </div>
                       <div className="card-body">
@@ -59,10 +68,17 @@ export default class Pricing extends React.Component {
                           ex ea commodo consequat.
                         </p>
                         <div className="pricing-img mt-3">
-                          <img
+                          {/* <img
                             src="img/images/speaker1.png"
                             alt="pricing img"
                             className="img-fluid"
+                          /> */}
+                          <LazyLoadImage
+                            placeholderSrc="img/images/speaker1.png"
+                            effect="blur"
+                            alt="pricing img"
+                            className="img-fluid"
+                            src="img/images/speaker1.png"
                           />
                         </div>
                         <p className="speakertitle">Jackie Jackson</p>

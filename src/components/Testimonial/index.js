@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import _data from "../../data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 class Testimonial extends Component {
   constructor(props) {
@@ -39,11 +41,19 @@ class Testimonial extends Component {
                           </p>
                         </div>
                         <div className="col-md-6">
-                          <img
+                          {/* <img
                             src="img/images/guest.png"
                             width="500"
                             alt="about us"
                             className="img-fluid"
+                          /> */}
+                          <LazyLoadImage
+                            placeholderSrc="img/images/guest.png"
+                            effect="blur"
+                            width="500"
+                            alt="about us"
+                            className="img-fluid"
+                            src="img/images/guest.png"
                           />
                         </div>
                       </div>

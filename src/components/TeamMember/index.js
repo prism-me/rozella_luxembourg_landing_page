@@ -1,5 +1,7 @@
 import React from "react";
 import _data from "../../data";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 class TeamMember extends React.Component {
   constructor(props) {
@@ -29,10 +31,17 @@ class TeamMember extends React.Component {
                   <div className="item" key={index}>
                     <div className="single-team-member position-relative">
                       <div className="team-image">
-                        <img
+                        {/* <img
                           src="img/images/galleryimg.png"
                           alt="Team Members"
-                          className="img-fluid"
+                          className="img-fluid teamImgstyle"
+                        /> */}
+                        <LazyLoadImage
+                          placeholderSrc="img/images/galleryimg.png"
+                          effect="blur"
+                          alt="Team Members"
+                          className="img-fluid teamImgstyle"
+                          src="img/images/galleryimg.png"
                         />
                       </div>
                       <div className="team-info text-white d-flex flex-column align-items-center justify-content-center">
