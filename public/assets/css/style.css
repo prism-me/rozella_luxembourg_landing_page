@@ -4076,6 +4076,18 @@ button,
   .hero-content-left .detail {
     font-size: 20px;
   }
+
+  .about-us .detail {
+    padding-right: 0;
+  }
+
+  .about-us .imgAboutMblspace {
+    padding: 0 15px !important;
+  }
+
+  .map-section .venu-wrape .venu-details {
+    padding: 45px 0px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4093,5 +4105,11 @@ button,
 
   .hero-content-left .detail {
     font-size: 22px;
+  }
+  .about-us .detail {
+    padding-right: 1rem;
+  }
+  .map-section .venu-wrape .venu-details {
+    padding: 45px 1rem;
   }
 }

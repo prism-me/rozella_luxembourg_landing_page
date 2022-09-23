@@ -89,7 +89,7 @@ jQuery(function ($) {
         items: 1,
       },
       768: {
-        items: 1,
+        items: 2,
       },
       991: {
         items: 2,

@@ -56,87 +56,71 @@ module.exports = {
       },
     ],
   },
-  price: {
-    title: "Pricing Packages",
-    description:
-      "Uniquely maintain efficient expertise whereas cross functional deliverables. Continually leverage other's competitive mind share whereas enabled channels. ",
+  speaker: {
     packages: [
       {
-        price: "$29",
-        license: "Basic",
-        isFeatured: false,
-        features: [
-          "Push Notifications",
-          "Data Transfer",
-          "SQL Database",
-          "Search & SEO Analytics",
-          "24/7 Phone Support",
-          "2 months technical support",
-          "2+ profitable keyword",
-        ],
+        name: "Jackie Jackson",
+        image: "img/images/speaker1.png",
+        designation: "Lead Developer",
+        detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat.`,
       },
       {
-        price: "$50",
-        license: "Popular",
-        isFeatured: true,
-        features: [
-          "Push Notifications",
-          "Data Transfer",
-          "SQL Database",
-          "Search & SEO Analytics",
-          "24/7 Phone Support",
-          "6 months technical support",
-          "30+ profitable keyword",
-        ],
+        name: "Herman Ledford",
+        image: "img/images/speaker2.png",
+        designation: "Project Manager",
+        detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat.`,
       },
       {
-        price: "$120",
-        license: "Extended",
-        isFeatured: false,
-        features: [
-          "Push Notifications",
-          "Data Transfer",
-          "SQL Database",
-          "Search & SEO Analytics",
-          "24/7 Phone Support",
-          "1 year technical support",
-          "70+ profitable keyword",
-        ],
+        name: "Anetta Winston",
+        image: "img/images/speaker3.png",
+        designation: "Sales Manager",
+        detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat.`,
       },
     ],
   },
   testimonial: {
-    title: "What customer say about us",
-    description:
-      'Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business. Conveniently innovate compelling internal.',
     comments: [
       {
-        name: "Arabella Ora",
-        company: "AgencyCo",
-        image: "img/client-2.jpg",
-        comment:
-          "Completely build backend ROI whereas cross-media metrics. Collaboratively deploy customer directed web-readiness via global testing procedures. Appropriately reinvent distributed innovation without proactive catalysts for change. Distinctively.",
+        name: "H.E Mohamed Al Sahlawi",
+        image: "img/images/H.E-Mohamed-Al-Sahlawi.jpg",
+        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+          Duchy of Luxembourg, and the European Union`,
       },
       {
-        name: "John Charles",
-        company: "ThemeTags",
-        image: "img/client-1.jpg",
-        comment:
-          "If you can design one thing you can design everything with Front. Just believe it. Collaboratively repurpose performance based e-commerce without cost. It's beautiful and the coding is done quickly and seamlessly.",
+        name: "Zhujun Xie",
+        image: "img/images/Zhujun-Xie.jpg",
+        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+        Duchy of Luxembourg, and the European Union`,
       },
       {
-        name: "Jeremy Jere",
-        company: "WorldCheck",
-        image: "img/client-3.jpg",
-        comment:
-          "The template is really nice and offers quite a large set of options. It's beautiful and the coding is done. If you can design one thing you can design everything with Front. Just believe it.",
+        name: "Kox Henri",
+        image: "img/images/Kox-Henri.jpg",
+        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+        Duchy of Luxembourg, and the European Union`,
       },
       {
-        name: "Ciaran Kierce",
-        company: "AppCo",
-        image: "img/client-4.jpg",
-        comment:
-          "I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. It’s really great how easy your websites are to update and manage. I never have any problem at all.",
+        name: "Ali Janoudi",
+        image: "img/images/Ali-Janoudi.jpg",
+        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+          Duchy of Luxembourg, and the European Union`,
+      },
+      {
+        name: "Nicolas Mackel",
+        image: "img/images/Nicolas-Mackel.jpg",
+        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+        Duchy of Luxembourg, and the European Union`,
       },
     ],
   },
@@ -150,13 +134,6 @@ module.exports = {
     phone: "+61 2 8376 6284",
     email: "hello@yourdomain.com",
   },
-  trustedCompany: [
-    "img/client-1-color.png",
-    "img/client-6-color.png",
-    "img/client-3-color.png",
-    "img/client-4-color.png",
-    "img/client-5-color.png",
-  ],
   trustedCompanyGray: [
     "img/client-1-gray.png",
     "img/client-2-gray.png",
@@ -181,42 +158,62 @@ module.exports = {
       "img/client-3-color.png",
     ],
   },
-  teamMember: {
+  gallery: {
     members: [
       {
-        name: "Edna Mason",
-        designation: "Senior Designer",
-        image: "img/team-4.jpg",
+        title: "Photo Gallery",
+        subtitle: "Lorem Ipsum Event",
+        image: "img/images/galleryimg1.jpg",
       },
       {
-        name: "Arabella Ora",
-        designation: "Senior Designer",
-        image: "img/team-1.jpg",
+        title: "Photo Gallery",
+        subtitle: "Lorem Ipsum Event",
+        image: "img/images/galleryimg2.jpg",
       },
       {
-        name: "John Charles",
-        designation: "Senior Designer",
-        image: "img/team-2.jpg",
+        title: "Photo Gallery",
+        subtitle: "Lorem Ipsum Event",
+        image: "img/images/galleryimg3.jpg",
       },
       {
-        name: "Jeremy Jere",
-        designation: "Senior Designer",
-        image: "img/team-3.jpg",
+        title: "Photo Gallery",
+        subtitle: "Lorem Ipsum Event",
+        image: "img/images/galleryimg1.jpg",
       },
       {
-        name: "Arabella Ora",
-        designation: "Senior Designer",
-        image: "img/team-1.jpg",
+        title: "Photo Gallery",
+        subtitle: "Lorem Ipsum Event",
+        image: "img/images/galleryimg2.jpg",
       },
       {
-        name: "John Charles",
-        designation: "Senior Designer",
-        image: "img/team-2.jpg",
+        title: "Photo Gallery",
+        subtitle: "Lorem Ipsum Event",
+        image: "img/images/galleryimg3.jpg",
+      },
+    ],
+  },
+  partners: {
+    members: [
+      {
+        image: "img/images/partner1.jpg",
       },
       {
-        name: "Jeremy Jere",
-        designation: "Senior Designer",
-        image: "img/team-3.jpg",
+        image: "img/images/partner2.jpg",
+      },
+      {
+        image: "img/images/partner3.jpg",
+      },
+      {
+        image: "img/images/partner4.jpg",
+      },
+      {
+        image: "img/images/partner5.jpg",
+      },
+      {
+        image: "img/images/partner6.jpg",
+      },
+      {
+        image: "img/images/partner7.jpg",
       },
     ],
   },

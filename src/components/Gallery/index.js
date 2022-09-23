@@ -16,7 +16,7 @@ class Gallery extends React.Component {
      * Your ajax will goes here to get data then call setState
      */
     this.setState({
-      teamMember: _data.teamMember,
+      teamMember: _data.gallery,
     });
   }
 
@@ -26,7 +26,7 @@ class Gallery extends React.Component {
         <section id="team" className="team-member-section pb-50 pt-3">
           <div className="container">
             <div className="owl-carousel owl-theme event-gallery dot-indicator">
-              {(this.state.teamMember.members || []).map((member, index) => {
+              {(this.state.teamMember.members || []).map((x, index) => {
                 return (
                   <div className="item" key={index}>
                     <div className="single-team-member position-relative">
@@ -37,16 +37,16 @@ class Gallery extends React.Component {
                           className="img-fluid teamImgstyle"
                         /> */}
                         <LazyLoadImage
-                          placeholderSrc="img/images/galleryimg.png"
+                          placeholderSrc={x.image}
                           effect="blur"
                           alt="Team Members"
                           className="img-fluid teamImgstyle"
-                          src="img/images/galleryimg.png"
+                          src={x.image}
                         />
                       </div>
                       <div className="team-info text-white d-flex flex-column align-items-center justify-content-center">
-                        <h5 className="mb-2">Photo Gallery</h5>
-                        <h6>Lorem Ipsum Event</h6>
+                        <h5 className="mb-2">{x.title}</h5>
+                        <h6>{x.subtitle}</h6>
                       </div>
                     </div>
                   </div>

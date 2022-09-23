@@ -16,7 +16,7 @@ class Partners extends React.Component {
      * Your ajax will goes here to get data then call setState
      */
     this.setState({
-      teamMember: _data.teamMember,
+      teamMember: _data.partners,
     });
   }
 
@@ -50,11 +50,11 @@ class Partners extends React.Component {
                       className="img-fluid mb-3"
                     /> */}
                     <LazyLoadImage
-                      placeholderSrc="img/images/partner1.png"
+                      placeholderSrc={member.image}
                       effect="blur"
                       alt="Team Members"
                       className="img-fluid mb-3"
-                      src="img/images/partner1.png"
+                      src={member.image}
                     />
                   </div>
                 );

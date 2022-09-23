@@ -17,7 +17,7 @@ class Speakers extends React.Component {
      */
 
     this.setState({
-      price: _data.price,
+      price: _data.speaker,
     });
   }
 
@@ -41,7 +41,7 @@ class Speakers extends React.Component {
                 backgroundSize: "cover",
               }}
             >
-              {(this.state.price.packages || []).map((_package, index) => {
+              {(this.state.price.packages || []).map((x, index) => {
                 return (
                   <div className="item" key={index}>
                     <div className={"card text-center single-pricing-pack"}>
@@ -60,13 +60,7 @@ class Speakers extends React.Component {
                         />
                       </div>
                       <div className="card-body">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat.
-                        </p>
+                        <p>{x.detail}</p>
                         <div className="pricing-img mt-3">
                           {/* <img
                             src="img/images/speaker1.png"
@@ -74,15 +68,15 @@ class Speakers extends React.Component {
                             className="img-fluid"
                           /> */}
                           <LazyLoadImage
-                            placeholderSrc="img/images/speaker1.png"
+                            placeholderSrc={x.image}
                             effect="blur"
                             alt="pricing img"
                             className="img-fluid"
-                            src="img/images/speaker1.png"
+                            src={x.image}
                           />
                         </div>
-                        <p className="speakertitle">Jackie Jackson</p>
-                        <p className="speakersubtitle">Project Manager</p>
+                        <p className="speakertitle">{x.name}</p>
+                        <p className="speakersubtitle">{x.designation}</p>
                       </div>
                     </div>
                   </div>

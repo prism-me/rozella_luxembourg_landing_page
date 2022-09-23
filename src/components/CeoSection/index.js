@@ -23,15 +23,15 @@ class CeoSection extends React.Component {
               <div className="col-md-6">
                 <div className="about-content-right">
                   <LazyLoadImage
-                    placeholderSrc="img/images/ceo.png"
+                    placeholderSrc="img/images/ceo.jpg"
                     effect="blur"
                     width="500"
                     alt="about us"
                     className="img-fluid"
-                    src="img/images/ceo.png"
+                    src="img/images/ceo.jpg"
                   />
                   {/* <img
-                    src="img/images/ceo.png"
+                    src="img/images/ceo.jpg"
                     width="500"
                     alt="about us"
                     className="img-fluid"

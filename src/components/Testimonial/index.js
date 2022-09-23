@@ -34,11 +34,8 @@ class Testimonial extends Component {
                         <div className="col-md-6">
                           <h2 className="maintitle">Guests of Honor</h2>
                           <hr className="hrstyle" />
-                          <h3 className="subtitle">H.E Mohamed Al Sahlawi</h3>
-                          <p className="detail">
-                            UAE Ambassador to the Kingdom of Belgium, Grand
-                            Duchy of Luxembourg, and the European Union
-                          </p>
+                          <h3 className="subtitle">{comment.name}</h3>
+                          <p className="detail">{comment.comment}</p>
                         </div>
                         <div className="col-md-6">
                           {/* <img
@@ -48,12 +45,12 @@ class Testimonial extends Component {
                             className="img-fluid"
                           /> */}
                           <LazyLoadImage
-                            placeholderSrc="img/images/guest.png"
+                            placeholderSrc={comment.image}
                             effect="blur"
                             width="500"
                             alt="about us"
                             className="img-fluid"
-                            src="img/images/guest.png"
+                            src={comment.image}
                           />
                         </div>
                       </div>
