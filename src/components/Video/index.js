@@ -33,7 +33,7 @@ class Video extends React.Component {
                   padding: "15rem 0",
                 }}
               >
-                <div className="col-md-6">
+                {/* <div className="col-md-6">
                   <div className="video-promo-content mt-4 text-center">
                     <a
                       href="https://www.youtube.com/watch?v=9No-FiEInLA"
@@ -42,7 +42,7 @@ class Video extends React.Component {
                       <span className="ti-control-play"></span>{" "}
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

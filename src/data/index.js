@@ -134,30 +134,6 @@ module.exports = {
     phone: "+61 2 8376 6284",
     email: "hello@yourdomain.com",
   },
-  trustedCompanyGray: [
-    "img/client-1-gray.png",
-    "img/client-2-gray.png",
-    "img/client-3-gray.png",
-    "img/client-4-gray.png",
-    "img/client-5-gray.png",
-  ],
-  trustedCompanyAboutUs: {
-    title: "Trusted by companies",
-    description:
-      'Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business. Conveniently innovate compelling internal.',
-    companies: [
-      "img/client-5-color.png",
-      "img/client-1-color.png",
-      "img/client-6-color.png",
-      "img/client-3-color.png",
-      "img/client-4-color.png",
-      "img/client-5-color.png",
-      "img/client-7-color.png",
-      "img/client-2-color.png",
-      "img/client-1-color.png",
-      "img/client-3-color.png",
-    ],
-  },
   gallery: {
     members: [
       {
