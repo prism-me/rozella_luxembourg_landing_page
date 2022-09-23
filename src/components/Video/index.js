@@ -1,5 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
 
 class Video extends React.Component {
   constructor(props) {
@@ -53,6 +52,4 @@ class Video extends React.Component {
   }
 }
 
-export default connect((state) => ({
-  state,
-}))(Video);
+export default Video;

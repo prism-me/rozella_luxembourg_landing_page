@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import Header from "../components/Header/header";
-import HeroSection from "../components/HeroSection/HeroSection2";
-import PromoSection from "../components/PromoSection/Promo2";
-import AboutSection from "../components/AboutUs/AboutUs2";
-import FeatureSection from "../components/Features/Feature2";
-import VideoSection from "../components/Video";
-import PricingSection from "../components/Pricing";
+import Banner from "../components/Banner/Banner";
+import CeoSection from "../components/CeoSection";
+import Event from "../components/Event";
+import RegisterSection from "../components/Register";
 import Testimonial from "../components/Testimonial";
-import Screenshots from "../components/Screenshots";
-import TeamMember from "../components/TeamMember";
-import Partners from "../components/Partners/index";
-import ContactSection from "../components/Contact";
+import Speakers from "../components/Speakers";
+import Partners from "../components/Partners";
+import AboutSection from "../components/About";
+import VideoSection from "../components/Video";
+import Gallery from "../components/Gallery";
+import Brokers from "../components/Brokers";
+import MapSection from "../components/MapSection";
 import FooterSection from "../components/Footer";
-import MapSection from "../components/Features/Feature6";
 
 class Theme extends Component {
   render() {
@@ -20,17 +20,17 @@ class Theme extends Component {
       <React.Fragment>
         <Header />
         <div className="main">
-          <HeroSection />
-          <ContactSection />
-          <Screenshots />
-          <PromoSection />
+          <Banner />
+          <RegisterSection />
+          <Event />
+          <CeoSection />
           <Testimonial />
-          <PricingSection />
+          <Speakers />
           <Partners />
           <AboutSection />
           <VideoSection />
-          <TeamMember />
-          <FeatureSection />
+          <Gallery />
+          <Brokers />
         </div>
         <MapSection />
         <FooterSection />
