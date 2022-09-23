@@ -26,7 +26,7 @@ class Banner extends React.Component {
         >
           <div className="container">
             <div className="row align-items-center justify-content-between">
-              <div className="col-md-8 col-lg-8">
+              <div className="col-md-10 col-lg-8">
                 <div className="hero-content-left text-white mt-5">
                   <h1 className="bannersubheading">Rozella Presents</h1>
                   <h2 className="bannerheading">Real Estate Giants</h2>
@@ -37,8 +37,7 @@ class Banner extends React.Component {
                       Le Royal Hotels and Resorts, 12 Bd Royal, 2449 Luxembourg
                     </span>
                   </p>
-
-                  <a href="#" className="bannerBtn">
+                  <a className="bannerBtn page-scroll" href="#register">
                     Get Your Free Ticket Now
                   </a>
                 </div>

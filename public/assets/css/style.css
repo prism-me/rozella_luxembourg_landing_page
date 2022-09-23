@@ -4056,3 +4056,42 @@ button,
   margin-bottom: 2rem;
   float: left;
 }
+
+/* -------------Responsiveness ------------ */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero-content-left {
+    text-align: center;
+    margin-top: 5rem !important;
+  }
+
+  .hero-content-left .bannersubheading {
+    font-size: 35px;
+  }
+
+  .hero-content-left .bannerheading {
+    font-size: 35px;
+  }
+
+  .hero-content-left .detail {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content-left {
+    margin-top: 5rem !important;
+  }
+
+  .hero-content-left .bannersubheading {
+    font-size: 40px;
+  }
+
+  .hero-content-left .bannerheading {
+    font-size: 40px;
+  }
+
+  .hero-content-left .detail {
+    font-size: 22px;
+  }
+}
