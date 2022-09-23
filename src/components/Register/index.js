@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import _data from "../../data";
 import { CountryCode } from "../../data/countries";
+import ZohoBannerForm from "../ZohoBannerForm/ZohoBannerForm";
 
 class Register extends Component {
   componentDidMount() {
@@ -51,7 +52,7 @@ class Register extends Component {
                 </div>
               </div>
               <div className="col-md-6">
-                <form id="contactForm1" className="contact-us-form">
+                {/* <form id="contactForm1" className="contact-us-form">
                   <div className="row">
                     <div className="col-12">
                       <div className="form-group">
@@ -128,7 +129,8 @@ class Register extends Component {
                       </button>
                     </div>
                   </div>
-                </form>
+                </form> */}
+                <ZohoBannerForm />
                 <p className="form-message"></p>
               </div>
             </div>

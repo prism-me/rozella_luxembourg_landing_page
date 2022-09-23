@@ -64,6 +64,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!--responsive css-->
     <link rel="stylesheet" href="/assets/css/responsive.css" />
+
+    <!--Zohoform css-->
+    <link rel="stylesheet" href="/assets/css/ZohoBannerForm.css" />
   </head>
 
   <body>
@@ -101,5 +104,101 @@
     <script src="/assets/js/jquery.countdown.min.js"></script>
     <!--custom js-->
     <script src="/assets/js/scripts.js"></script>
+
+    <!-- zoho form code start -->
+    <script>
+      function validateEmail5200448000001276014() {
+        var form = document.forms["WebToLeads5200448000001276014"];
+        var emailFld = form.querySelectorAll("[ftype=email]");
+        var i;
+        for (i = 0; i < emailFld.length; i++) {
+          var emailVal = emailFld[i].value;
+          if (emailVal.replace(/^\s+|\s+$/g, "").length != 0) {
+            var atpos = emailVal.indexOf("@");
+            var dotpos = emailVal.lastIndexOf(".");
+            if (
+              atpos < 1 ||
+              dotpos < atpos + 2 ||
+              dotpos + 2 >= emailVal.length
+            ) {
+              alert("Please enter a valid email address. ");
+              emailFld[i].focus();
+              return false;
+            }
+          }
+        }
+        return true;
+      }
+
+      function checkMandatory5200448000001276014() {
+        var mndFileds = new Array("Last Name", "Email", "Mobile", "LEADCF7");
+        var fldLangVal = new Array(
+          "Name",
+          "Email",
+          "Mobile",
+          "Country\x20Code"
+        );
+        for (i = 0; i < mndFileds.length; i++) {
+          var fieldObj =
+            document.forms["WebToLeads5200448000001276014"][mndFileds[i]];
+          if (fieldObj) {
+            if (fieldObj.value.replace(/^\s+|\s+$/g, "").length == 0) {
+              if (fieldObj.type == "file") {
+                alert("Please select a file to upload.");
+                fieldObj.focus();
+                return false;
+              }
+              alert(fldLangVal[i] + " cannot be empty.");
+              fieldObj.focus();
+              return false;
+            } else if (fieldObj.nodeName == "SELECT") {
+              if (fieldObj.options[fieldObj.selectedIndex].value == "-None-") {
+                alert(fldLangVal[i] + " cannot be none.");
+                fieldObj.focus();
+                return false;
+              }
+            } else if (fieldObj.type == "checkbox") {
+              if (fieldObj.checked == false) {
+                alert("Please accept  " + fldLangVal[i]);
+                fieldObj.focus();
+                return false;
+              }
+            }
+            try {
+              if (fieldObj.name == "Last Name") {
+                name = fieldObj.value;
+              }
+            } catch (e) {}
+          }
+        }
+        if (!validateEmail5200448000001276014()) {
+          return false;
+        }
+        document
+          .querySelector(".crmWebToEntityForm .formsubmit")
+          .setAttribute("disabled", true);
+      }
+
+      function tooltipShow5200448000001276014(el) {
+        var tooltip = el.nextElementSibling;
+        var tooltipDisplay = tooltip.style.display;
+        if (tooltipDisplay == "none") {
+          var allTooltip = document.getElementsByClassName("zcwf_tooltip_over");
+          for (i = 0; i < allTooltip.length; i++) {
+            allTooltip[i].style.display = "none";
+          }
+          tooltip.style.display = "block";
+        } else {
+          tooltip.style.display = "none";
+        }
+      }
+    </script>
+    <!-- Do not remove this --- Analytics Tracking code starts -->
+    <script
+      id="wf_anal"
+      src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=d3e32f7b53c1c7240f0dcd5fb75b7203e6302e7c8c8ea4bfc0195a6e03791634gid22c852729e96c7ad7066616f422dead1bdebdf45daecdbff6851ba9bb4bbd4a6gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a"
+    ></script>
+    <!-- Do not remove this --- Analytics Tracking code ends. -->
+    <!-- zoho form code end -->
   </body>
 </html>
