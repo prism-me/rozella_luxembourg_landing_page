@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #071c35;
+  background-color: #01052d;
   color: #ffffff;
 }
 
@@ -22,8 +22,8 @@
 
 .btn-submit {
   border-radius: 0;
-  background-color: #071c35;
-  border-color: #071c35;
+  background-color: #01052d;
+  border-color: #01052d;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
