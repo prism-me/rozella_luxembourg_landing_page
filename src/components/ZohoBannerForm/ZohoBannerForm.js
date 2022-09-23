@@ -8,7 +8,7 @@ function ZohoBannerForm() {
         id="crmWebToEntityForm"
         class="zcwf_lblLeft crmWebToEntityForm"
         style={{
-          backgroundColor: "#ffffffbf",
+          backgroundColor: "transparent",
           color: "black",
           // maxWidth: "420px",
           maxWidth: "100%",
@@ -193,14 +193,14 @@ function ZohoBannerForm() {
                 type="submit"
                 id="formsubmit"
                 class="formsubmit zcwf_button"
-                value="Submit"
+                value="REGISTER"
                 title="REGISTER"
               />
               <input
                 type="reset"
                 class="zcwf_button"
                 name="reset"
-                value="Reset"
+                value="RESET"
                 title="RESET"
               />
             </div>
