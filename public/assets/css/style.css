@@ -553,6 +553,7 @@ select.form-control.has-value {
 .section-heading .title {
   font-weight: 900;
   font-size: 30px;
+  color: #3c3c3c;
 }
 
 .section-heading .title span {
@@ -3772,6 +3773,7 @@ button,
 .contact-us .footer-address ul {
   list-style: circle;
   padding-left: 15px;
+  color: #3c3c3c;
 }
 
 .contact-us .footer-address ul li span {

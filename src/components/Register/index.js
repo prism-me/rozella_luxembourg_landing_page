@@ -27,7 +27,7 @@ class Register extends Component {
                   <h3 className="title">
                     Reserve<span> Your Seat</span>
                   </h3>
-                  <p>
+                  <p style={{ color: "#3c3c3c" }}>
                     Register now & gain access to all key players in the Dubai
                     real estate market under one roof.
                   </p>
