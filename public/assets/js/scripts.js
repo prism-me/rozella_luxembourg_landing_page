@@ -239,18 +239,6 @@ jQuery(function ($) {
     }
   }
 
-  // 8. client-testimonial one item carousel
-  $(".client-testimonial-1").owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false,
-    responsiveClass: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    lazyLoad: true,
-    items: 1,
-  });
-
   // 9. our clients logo carousel
   $(".clients-carousel").owlCarousel({
     autoplay: true,

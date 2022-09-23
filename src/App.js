@@ -18,10 +18,10 @@ function App() {
             zIndex: 99999,
             height: "100%",
             width: "100%",
-            background: "rgba(49, 135, 196, 0.3)",
+            background: "rgba(1, 5, 45, 0.3)",
           }}
         >
-          <BounceLoader color={"#071c35"} size={100} />
+          <BounceLoader color={"#01052d"} size={100} />
         </div>
       ) : (
         <Routes />
