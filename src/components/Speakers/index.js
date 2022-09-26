@@ -33,12 +33,14 @@ class Speakers extends React.Component {
               </div>
             </div>
             <div
-              className="owl-carousel owl-theme speaker-testimonial ptb-50 px-5"
+              className="owl-carousel owl-theme speaker-testimonial ptb-50"
               style={{
                 backgroundImage: "url('img/images/speakerbg.jpg')",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
                 backgroundSize: "cover",
+                paddingLeft: "70px",
+                paddingRight: "70px",
               }}
             >
               {(this.state.price.packages || []).map((x, index) => {
