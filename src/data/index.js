@@ -59,41 +59,41 @@ module.exports = {
   speaker: {
     packages: [
       {
-        name: "Jackie Jackson",
-        image: "img/images/speaker1.png",
-        designation: "Lead Developer",
+        name: "Mr. Qaisar HIJAZIN",
+        image: "img/images/speaker1.jpg",
+        designation: "Secretary General, ABLCC",
         detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
         elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua. Ut enim ad minim veniam, quis
         nostrud exercitation ullamco laboris nisi ut aliquip
         ex ea commodo consequat.`,
       },
-      {
-        name: "Herman Ledford",
-        image: "img/images/speaker2.png",
-        designation: "Project Manager",
-        detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.`,
-      },
-      {
-        name: "Anetta Winston",
-        image: "img/images/speaker3.png",
-        designation: "Sales Manager",
-        detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.`,
-      },
+      // {
+      //   name: "Herman Ledford",
+      //   image: "img/images/speaker2.png",
+      //   designation: "Project Manager",
+      //   detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
+      //   elit, sed do eiusmod tempor incididunt ut labore et
+      //   dolore magna aliqua. Ut enim ad minim veniam, quis
+      //   nostrud exercitation ullamco laboris nisi ut aliquip
+      //   ex ea commodo consequat.`,
+      // },
+      // {
+      //   name: "Anetta Winston",
+      //   image: "img/images/speaker3.png",
+      //   designation: "Sales Manager",
+      //   detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
+      //   elit, sed do eiusmod tempor incididunt ut labore et
+      //   dolore magna aliqua. Ut enim ad minim veniam, quis
+      //   nostrud exercitation ullamco laboris nisi ut aliquip
+      //   ex ea commodo consequat.`,
+      // },
     ],
   },
   testimonial: {
     comments: [
       {
-        name: "Qaysar Hejazeen",
+        name: "Mr. Qaisar HIJAZIN (Secretary General, ABLCC)",
         image: "img/images/Qaysar.jpg",
         comment: `UAE Ambassador to the Kingdom of Belgium, Grand
           Duchy of Luxembourg, and the European Union`,
