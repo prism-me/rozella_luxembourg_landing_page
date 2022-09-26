@@ -60,7 +60,7 @@ module.exports = {
     packages: [
       {
         name: "Mr. Qaisar HIJAZIN",
-        image: "img/images/speaker1.jpg",
+        image: "img/images/speaker1.png",
         designation: "Secretary General, ABLCC",
         detail: `Lorem ipsum dolor sit amet, consectetur adipiscing
         elit, sed do eiusmod tempor incididunt ut labore et
