@@ -93,35 +93,35 @@ module.exports = {
   testimonial: {
     comments: [
       {
-        name: "H.E Mohamed Al Sahlawi",
-        image: "img/images/H.E-Mohamed-Al-Sahlawi.jpg",
+        name: "Qaysar Hejazeen",
+        image: "img/images/Qaysar.jpg",
         comment: `UAE Ambassador to the Kingdom of Belgium, Grand
           Duchy of Luxembourg, and the European Union`,
       },
-      {
-        name: "Zhujun Xie",
-        image: "img/images/Zhujun-Xie.jpg",
-        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-        Duchy of Luxembourg, and the European Union`,
-      },
-      {
-        name: "Kox Henri",
-        image: "img/images/Kox-Henri.jpg",
-        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-        Duchy of Luxembourg, and the European Union`,
-      },
-      {
-        name: "Ali Janoudi",
-        image: "img/images/Ali-Janoudi.jpg",
-        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-          Duchy of Luxembourg, and the European Union`,
-      },
-      {
-        name: "Nicolas Mackel",
-        image: "img/images/Nicolas-Mackel.jpg",
-        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-        Duchy of Luxembourg, and the European Union`,
-      },
+      // {
+      //   name: "Zhujun Xie",
+      //   image: "img/images/Zhujun-Xie.jpg",
+      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+      //   Duchy of Luxembourg, and the European Union`,
+      // },
+      // {
+      //   name: "Kox Henri",
+      //   image: "img/images/Kox-Henri.jpg",
+      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+      //   Duchy of Luxembourg, and the European Union`,
+      // },
+      // {
+      //   name: "Ali Janoudi",
+      //   image: "img/images/Ali-Janoudi.jpg",
+      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+      //     Duchy of Luxembourg, and the European Union`,
+      // },
+      // {
+      //   name: "Nicolas Mackel",
+      //   image: "img/images/Nicolas-Mackel.jpg",
+      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
+      //   Duchy of Luxembourg, and the European Union`,
+      // },
     ],
   },
   contact: {
@@ -176,21 +176,21 @@ module.exports = {
       {
         image: "img/images/partner2.jpg",
       },
-      {
-        image: "img/images/partner3.jpg",
-      },
+      // {
+      //   image: "img/images/partner3.jpg",
+      // },
       {
         image: "img/images/partner4.jpg",
       },
-      {
-        image: "img/images/partner5.jpg",
-      },
-      {
-        image: "img/images/partner6.jpg",
-      },
-      {
-        image: "img/images/partner7.jpg",
-      },
+      // {
+      //   image: "img/images/partner5.jpg",
+      // },
+      // {
+      //   image: "img/images/partner6.jpg",
+      // },
+      // {
+      //   image: "img/images/partner7.jpg",
+      // },
     ],
   },
   video: {
