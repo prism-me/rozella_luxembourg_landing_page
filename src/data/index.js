@@ -179,9 +179,9 @@ module.exports = {
       // {
       //   image: "img/images/partner3.jpg",
       // },
-      {
-        image: "img/images/partner4.jpg",
-      },
+      // {
+      //   image: "img/images/partner4.jpg",
+      // },
       // {
       //   image: "img/images/partner5.jpg",
       // },

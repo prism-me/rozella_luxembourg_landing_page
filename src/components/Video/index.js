@@ -1,5 +1,5 @@
 import React from "react";
-
+import video from './../../video/property.mp4'
 class Video extends React.Component {
   constructor(props) {
     super(props);
@@ -21,8 +21,13 @@ class Video extends React.Component {
               <h2 className="maintitle">Video and Photo Galleries</h2>
               <hr className="hrstyle" />
             </div>
+            </div>
             <div className="container">
-              <div
+
+              <video width="1110" autoplay="true" muted>
+                <source src={video} type="video/mp4" />
+              </video>
+              {/* <div
                 className="row justify-content-center"
                 style={{
                   backgroundImage: "url('img/images/videoimg.jpg')",
@@ -33,7 +38,7 @@ class Video extends React.Component {
                   padding: "15rem 0",
                 }}
               >
-                {/* <div className="col-md-6">
+                 <div className="col-md-6">
                   <div className="video-promo-content mt-4 text-center">
                     <a
                       href="https://www.youtube.com/watch?v=9No-FiEInLA"
@@ -42,10 +47,9 @@ class Video extends React.Component {
                       <span className="ti-control-play"></span>{" "}
                     </a>
                   </div>
-                </div> */}
-              </div>
+                </div> 
+              </div> */}
             </div>
-          </div>
         </section>
       </React.Fragment>
     );
