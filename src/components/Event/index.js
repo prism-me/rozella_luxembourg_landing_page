@@ -1,7 +1,7 @@
 import React from "react";
 import _data from "../../data";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import "react-lazy-load-image-component/src/effects/blur.css";
 
 class Event extends React.Component {
   constructor(props) {
@@ -52,47 +52,17 @@ class Event extends React.Component {
               </p>
             </div>
           </div>
-          {/* <div className="screen-slider-content my-5">
-              <div className="screenshot-frame"></div>
-              <div className="screen-carousel owl-carousel owl-theme dot-indicator"> */}
-          <LazyLoadImage
+          {/* <LazyLoadImage
             placeholderSrc="img/images/eventimg.png"
             effect="blur"
             className="img-fluid"
             src="img/images/eventimg.png"
-          />
-          {/* <img
+          /> */}
+          <img
             src="img/images/eventimg.png"
             className="img-fluid"
-            alt="screenshots"
-          /> */}
-          {/* <img
-                  src="img/images/slider.png"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/images/slider.png"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/images/slider.png"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/images/slider.png"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/images/slider.png"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-              </div>
-            </div> */}
+            alt="eventimg"
+          />
         </section>
       </React.Fragment>
     );
