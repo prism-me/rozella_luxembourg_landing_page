@@ -24,7 +24,7 @@ class Event extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section id="about" className="screenshots-section ptb-50">
+        <section id="about" className="event-section ptb-50">
           <div className="container">
             <div className="mb-5">
               <h2 className="maintitle">About The Event</h2>

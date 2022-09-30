@@ -4022,7 +4022,7 @@ button,
   display: inline;
 }
 
-.screenshots-section .maintitle {
+.event-section .maintitle {
   color: #ffffff;
   font-weight: 900;
   font-size: 30px;
@@ -4030,7 +4030,7 @@ button,
   margin-bottom: 1rem;
 }
 
-.screenshots-section .hrstyle {
+.event-section .hrstyle {
   border: 0.5px solid #ffffff;
   margin-top: 0;
   width: 20%;
@@ -4038,7 +4038,7 @@ button,
   float: center;
 }
 
-.screenshots-section .detail {
+.event-section .detail {
   text-align: center;
   clear: both;
   color: #ffffff;
