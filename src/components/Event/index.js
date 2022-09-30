@@ -2,6 +2,7 @@ import React from "react";
 import _data from "../../data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import eventsectionImg from "../../assets/eventsectionImg.png";
 
 class Event extends React.Component {
   constructor(props) {
@@ -53,10 +54,10 @@ class Event extends React.Component {
             </div>
           </div>
           <LazyLoadImage
-            placeholderSrc="img/images/eventsectionImg.png"
+            placeholderSrc={eventsectionImg}
             effect="blur"
             className="img-fluid"
-            src="img/images/eventsectionImg.png"
+            src={eventsectionImg}
           />
           {/* <img
             src="img/images/eventsectionImg.png"
