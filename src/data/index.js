@@ -93,35 +93,25 @@ module.exports = {
   testimonial: {
     comments: [
       {
-        name: "Mr. Qaisar HIJAZIN (Secretary General, ABLCC)",
-        image: "img/images/Qaysar.jpg",
-        comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-          Duchy of Luxembourg, and the European Union`,
+        name: "Cheick Keita",
+        image: "img/images/CheickKeita.jpg",
+        comment: `President of OPND Pan African. Observatory of Digital and President of O.B.A ( Open Business Africa) and B.O.I ( Bridge of Innovation) and CIDIGA.`,
       },
-      // {
-      //   name: "Zhujun Xie",
-      //   image: "img/images/Zhujun-Xie.jpg",
-      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-      //   Duchy of Luxembourg, and the European Union`,
-      // },
-      // {
-      //   name: "Kox Henri",
-      //   image: "img/images/Kox-Henri.jpg",
-      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-      //   Duchy of Luxembourg, and the European Union`,
-      // },
-      // {
-      //   name: "Ali Janoudi",
-      //   image: "img/images/Ali-Janoudi.jpg",
-      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-      //     Duchy of Luxembourg, and the European Union`,
-      // },
-      // {
-      //   name: "Nicolas Mackel",
-      //   image: "img/images/Nicolas-Mackel.jpg",
-      //   comment: `UAE Ambassador to the Kingdom of Belgium, Grand
-      //   Duchy of Luxembourg, and the European Union`,
-      // },
+      {
+        name: "Gilbert Collard",
+        image: "img/images/GilbertCollard.jpg",
+        comment: `Député Européen`,
+      },
+      {
+        name: "Laetitia De Caritat Laffite",
+        image: "img/images/LaetitiaDeCaritatLaffite.jpeg",
+        comment: `Founder Laffite Automotive Group`,
+      },
+      {
+        name: "Thierry Mariani",
+        image: "img/images/ThierryMariani.jpg",
+        comment: `European Parliament`,
+      },
     ],
   },
   contact: {

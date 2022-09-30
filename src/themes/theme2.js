@@ -25,7 +25,7 @@ class Theme extends Component {
           <Event />
           <CeoSection />
           <Testimonial />
-          <Speakers />
+          {/* <Speakers /> */}
           <Partners />
           <AboutSection />
           <VideoSection />
