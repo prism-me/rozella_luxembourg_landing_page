@@ -125,9 +125,12 @@ class Gallery extends React.Component {
               {(images || []).map((x, index) => {
                 return (
                   <div
-                    className="item"
+                    className="item container-fluid"
                     key={index}
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      marginBottom: "2rem",
+                    }}
                     onClick={() =>
                       this.setState({ isOpen: true, photoIndex: index })
                     }

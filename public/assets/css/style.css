@@ -4081,10 +4081,10 @@ button,
   background: #9629e6 !important;
 }
 
-.listStyle {
+/* .listStyle {
   padding-right: 1rem;
   margin-bottom: 2rem;
-}
+} */
 
 .ReactModal__Overlay {
   z-index: 9999 !important;

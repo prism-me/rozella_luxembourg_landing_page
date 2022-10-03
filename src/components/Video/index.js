@@ -24,9 +24,12 @@ class Video extends React.Component {
           <div className="container">
             <video
               style={{ objectFit: "cover", width: "100%" }}
-              autoPlay={true}
+              autoplay={true}
               muted
+              poster="img/images/poster.jpg"
+              loop
               playsinline
+              src="https://rozella.b-cdn.net/Luxembourg_event/property.mp4"
             >
               <source
                 src="https://rozella.b-cdn.net/Luxembourg_event/property.mp4"
