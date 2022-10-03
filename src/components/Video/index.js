@@ -1,5 +1,4 @@
 import React from "react";
-import video from "./../../video/property.mp4";
 class Video extends React.Component {
   constructor(props) {
     super(props);
@@ -28,7 +27,10 @@ class Video extends React.Component {
               autoPlay={true}
               muted
             >
-              <source src={video} type="video/mp4" />
+              <source
+                src="https://rozella.b-cdn.net/Luxembourg_event/property.mp4"
+                type="video/mp4"
+              />
             </video>
             {/* <div
                 className="row justify-content-center"
