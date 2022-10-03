@@ -4082,8 +4082,12 @@ button,
 }
 
 .listStyle {
-  margin-right: 1rem;
+  padding-right: 1rem;
   margin-bottom: 2rem;
+}
+
+.ReactModal__Overlay {
+  z-index: 9999 !important;
 }
 
 /* -------------Responsiveness ------------ */

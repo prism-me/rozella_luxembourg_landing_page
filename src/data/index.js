@@ -124,40 +124,6 @@ module.exports = {
     phone: "+61 2 8376 6284",
     email: "hello@yourdomain.com",
   },
-  gallery: {
-    members: [
-      {
-        title: "Photo Gallery",
-        subtitle: "Lorem Ipsum Event",
-        image: "img/images/galleryimg1.jpg",
-      },
-      {
-        title: "Photo Gallery",
-        subtitle: "Lorem Ipsum Event",
-        image: "img/images/galleryimg2.jpg",
-      },
-      {
-        title: "Photo Gallery",
-        subtitle: "Lorem Ipsum Event",
-        image: "img/images/galleryimg3.jpg",
-      },
-      {
-        title: "Photo Gallery",
-        subtitle: "Lorem Ipsum Event",
-        image: "img/images/galleryimg1.jpg",
-      },
-      {
-        title: "Photo Gallery",
-        subtitle: "Lorem Ipsum Event",
-        image: "img/images/galleryimg2.jpg",
-      },
-      {
-        title: "Photo Gallery",
-        subtitle: "Lorem Ipsum Event",
-        image: "img/images/galleryimg3.jpg",
-      },
-    ],
-  },
   partners: {
     members: [
       {

@@ -25,7 +25,7 @@ class Video extends React.Component {
           <div className="container">
             <video
               style={{ objectFit: "cover", width: "100%" }}
-              autoplay="true"
+              autoPlay={true}
               muted
             >
               <source src={video} type="video/mp4" />

@@ -1,25 +1,54 @@
 import React from "react";
-import _data from "../../data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
+const images = [
+  {
+    title: "Photo Gallery",
+    subtitle: "Lorem Ipsum Event",
+    image: "img/images/galleryimg1.jpg",
+  },
+  {
+    title: "Photo Gallery",
+    subtitle: "Lorem Ipsum Event",
+    image: "img/images/galleryimg2.jpg",
+  },
+  {
+    title: "Photo Gallery",
+    subtitle: "Lorem Ipsum Event",
+    image: "img/images/galleryimg3.jpg",
+  },
+  {
+    title: "Photo Gallery",
+    subtitle: "Lorem Ipsum Event",
+    image: "img/images/galleryimg1.jpg",
+  },
+  {
+    title: "Photo Gallery",
+    subtitle: "Lorem Ipsum Event",
+    image: "img/images/galleryimg2.jpg",
+  },
+  {
+    title: "Photo Gallery",
+    subtitle: "Lorem Ipsum Event",
+    image: "img/images/galleryimg3.jpg",
+  },
+];
 
 class Gallery extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      teamMember: {},
-    };
-  }
+  state = {
+    photoIndex: 0,
+    isOpen: false,
+  };
 
   componentDidMount() {
     /**
      * Your ajax will goes here to get data then call setState
      */
-    this.setState({
-      teamMember: _data.gallery,
-    });
   }
 
   render() {
@@ -42,6 +71,7 @@ class Gallery extends React.Component {
         items: 1,
       },
     };
+    const { photoIndex, isOpen } = this.state;
     return (
       <React.Fragment>
         <section id="team" className="team-member-section pb-50 pt-3">
@@ -54,7 +84,7 @@ class Gallery extends React.Component {
               ssr={true} // means to render carousel on server-side.
               infinite={false}
               draggable={true}
-              autoPlay={false}
+              autoPlay={true}
               autoPlaySpeed={3000}
               keyBoardControl={true}
               customTransition="all .5s"
@@ -62,9 +92,14 @@ class Gallery extends React.Component {
               containerClass="carousel-container"
               itemClass="listStyle"
             >
-              {(this.state.teamMember.members || []).map((x, index) => {
+              {(images || []).map((x, index) => {
                 return (
-                  <div className="item" key={index}>
+                  <div
+                    className="item"
+                    key={index}
+                    style={{ cursor: "pointer" }}
+                    onClick={() => this.setState({ isOpen: true })}
+                  >
                     <div className="single-team-member position-relative">
                       <div className="team-image">
                         {/* <img
@@ -89,6 +124,30 @@ class Gallery extends React.Component {
                 );
               })}
             </Carousel>
+            {isOpen && (
+              <Lightbox
+                mainSrc={images.image[photoIndex]}
+                nextSrc={images.image[(photoIndex + 1) % images.image.length]}
+                prevSrc={
+                  images.image[
+                    (photoIndex + images.image.length - 1) % images.image.length
+                  ]
+                }
+                onCloseRequest={() => this.setState({ isOpen: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex:
+                      (photoIndex + images.image.length - 1) %
+                      images.image.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % images.image.length,
+                  })
+                }
+              />
+            )}
           </div>
         </section>
       </React.Fragment>

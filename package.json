@@ -6,6 +6,7 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-image-lightbox": "^5.1.4",
     "react-lazy-load-image-component": "^1.5.5",
     "react-multi-carousel": "^2.8.2",
     "react-redux": ">=5.0.7",

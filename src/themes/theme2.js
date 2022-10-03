@@ -13,6 +13,7 @@ import Gallery from "../components/Gallery";
 import Brokers from "../components/Brokers";
 import MapSection from "../components/MapSection";
 import FooterSection from "../components/Footer";
+import AboutDubai from "../components/AboutDubai";
 
 class Theme extends Component {
   render() {
@@ -23,6 +24,7 @@ class Theme extends Component {
           <Banner />
           <RegisterSection />
           <Event />
+          <AboutDubai />
           <CeoSection />
           <Testimonial />
           {/* <Speakers /> */}
