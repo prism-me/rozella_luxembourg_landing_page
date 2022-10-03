@@ -5,10 +5,10 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
 const images = [
-  "img/images/about1.jpg",
-  "img/images/about2.jpg",
-  "img/images/about1.jpg",
-  "img/images/about2.jpg",
+  "img/images/aboutdubai1.jpg",
+  "img/images/aboutdubai2.jpg",
+  "img/images/aboutdubai3.jpg",
+  "img/images/aboutdubai4.jpg",
 ];
 
 class AboutDubai extends React.Component {
