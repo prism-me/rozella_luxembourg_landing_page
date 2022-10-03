@@ -2,6 +2,8 @@ import React from "react";
 import _data from "../../data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -21,11 +23,45 @@ class Gallery extends React.Component {
   }
 
   render() {
+    const responsive = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 3,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 2,
+      },
+      mobile: {
+        breakpoint: { max: 600, min: 0 },
+        items: 1,
+      },
+    };
     return (
       <React.Fragment>
         <section id="team" className="team-member-section pb-50 pt-3">
           <div className="container">
-            <div className="owl-carousel owl-theme event-gallery dot-indicator">
+            <Carousel
+              responsive={responsive}
+              swipeable={true}
+              showDots={true}
+              arrows={false}
+              ssr={true} // means to render carousel on server-side.
+              infinite={false}
+              draggable={true}
+              autoPlay={false}
+              autoPlaySpeed={3000}
+              keyBoardControl={true}
+              customTransition="all .5s"
+              transitionDuration={500}
+              containerClass="carousel-container"
+              itemClass="listStyle"
+            >
               {(this.state.teamMember.members || []).map((x, index) => {
                 return (
                   <div className="item" key={index}>
@@ -52,7 +88,7 @@ class Gallery extends React.Component {
                   </div>
                 );
               })}
-            </div>
+            </Carousel>
           </div>
         </section>
       </React.Fragment>

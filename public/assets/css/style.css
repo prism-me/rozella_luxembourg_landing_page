@@ -2818,6 +2818,11 @@ blockquote:before {
   overflow: hidden;
 }
 
+.team-image span {
+  width: 100%;
+  height: 100%;
+}
+
 .team-info {
   position: absolute;
   top: 0;
@@ -3909,6 +3914,11 @@ button,
   letter-spacing: normal;
 }
 
+.testimonial-section .guestimgwraper {
+  justify-content: end;
+  display: flex;
+}
+
 .package-section .maintitle {
   color: #ffffff;
   font-weight: 900;
@@ -4059,6 +4069,23 @@ button,
   float: left;
 }
 
+.react-multi-carousel-dot button {
+  border-radius: 0 !important;
+  background: #d8d8d8 !important;
+  border: none !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #9629e6 !important;
+}
+
+.listStyle {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
 /* -------------Responsiveness ------------ */
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -4089,6 +4116,11 @@ button,
 
   .map-section .venu-wrape .venu-details {
     padding: 45px 0px;
+  }
+
+  .testimonial-section .guestimgwraper {
+    justify-content: center;
+    display: flex;
   }
 }
 

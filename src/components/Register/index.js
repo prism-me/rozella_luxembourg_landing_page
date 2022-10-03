@@ -22,17 +22,19 @@ class Register extends Component {
                 <div className="footer-address">
                   <ul>
                     <li>
-                      <span>Meet Top Tier</span> Investors, Buyers & Regulators
+                      <span>Top Tier Developers ,</span> High end service
+                      management and Regulators
                     </li>
                     <li>
-                      <span>Get Briefed</span> on The Latest Trends and
-                      Opportunities
+                      <span>Get Briefed</span> on the latest project updates and
+                      Real Estate opportunities
                     </li>
-                    <li>
+                    {/* <li>
                       <span>Discuss Business</span> with the Right People
-                    </li>
+                    </li> */}
                     <li>
-                      <span>Find & Grab</span> Business Opportunities
+                      <span>Find & Grab</span> of Real Estate investment
+                      opportunities
                     </li>
                   </ul>
                 </div>
