@@ -74,7 +74,9 @@ class AboutDubai extends React.Component {
                         className="img-fluid"
                         style={{ cursor: "pointer" }}
                         src={x}
-                        onClick={() => this.setState({ isOpen: true })}
+                        onClick={() =>
+                          this.setState({ isOpen: true, photoIndex: i })
+                        }
                       />
                     </div>
                   ))}

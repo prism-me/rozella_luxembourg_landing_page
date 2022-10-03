@@ -128,7 +128,9 @@ class Gallery extends React.Component {
                     className="item"
                     key={index}
                     style={{ cursor: "pointer" }}
-                    onClick={() => this.setState({ isOpen: true })}
+                    onClick={() =>
+                      this.setState({ isOpen: true, photoIndex: index })
+                    }
                   >
                     <div className="single-team-member position-relative">
                       <div className="team-image">

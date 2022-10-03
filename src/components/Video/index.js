@@ -26,6 +26,7 @@ class Video extends React.Component {
               style={{ objectFit: "cover", width: "100%" }}
               autoPlay={true}
               muted
+              playsinline
             >
               <source
                 src="https://rozella.b-cdn.net/Luxembourg_event/property.mp4"
