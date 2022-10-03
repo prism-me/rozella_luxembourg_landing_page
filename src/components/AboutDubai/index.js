@@ -13,8 +13,11 @@ const images = [
 
 class AboutDubai extends React.Component {
   state = {
-    text: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`,
+    text: `Dubai property market started to pick up soon after HRH Sheikh Mohammed Bin Rashid Al Maktoum, the then crown prince general of Dubai declared freehold rights for owning property for non-national back in 2022. Property prices almost quadrupled between 2002 and 2008 and that’s when the financial crisis hit, plunging the world into the most severe recession witnessed for decades.\n
+
+    The crisis had an adverse effect on Dubai real estate as well but the city has always bounced back stronger. The leadership put a robust legal and regulatory framework in place which has been instrumental in its rapid recovery in the wake of the 2020 Covid-19 pandemic, fueled by the rapid response to the health crisis and Expo 2020 Dubai.\n
+    
+    Dubai leadership has laid the foundations for robust growth and equipped the nation with the resilience required to navigate uncharted waters. The future looks promising with ever-increasing demand, making the Dubai real estate market ripe for investment.`,
     isReadMore: true,
     photoIndex: 0,
     isOpen: false,

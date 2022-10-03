@@ -38,12 +38,12 @@ class About extends React.Component {
         <section className="about-us pb-50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-7 col-md-6 col-sm-12">
+              <div className="col-lg-8 col-md-6 col-sm-12">
                 <p className="mainsubtitle">About</p>
                 <h2 className="maintitle">Sobha Realty</h2>
                 <hr className="hrstyle" />
                 <p className="detail">
-                  {isReadMore ? text.slice(0, 250) : text}
+                  {isReadMore ? text.slice(0, 350) : text}
                 </p>
                 <button
                   className="viewdetailsbtn"
@@ -53,41 +53,21 @@ class About extends React.Component {
                   <span className="ti-arrow-right btnicon"></span>
                 </button>
               </div>
-              <div className="col-lg-5 col-md-6 col-sm-12">
-                <div className="row">
-                  <div className="col-md-6 col-sm-6 col-6 pl-0 py-0 imgAboutMblspace">
-                    {/* <img
+              <div className="col-lg-4 col-md-6 col-sm-12">
+                <LazyLoadImage
+                  placeholderSrc="img/images/about1.jpg"
+                  effect="blur"
+                  width="500"
+                  alt="about us"
+                  className="img-fluid"
+                  src="img/images/about1.jpg"
+                />
+                {/* <img
                       src="img/images/about1.png"
                       width="500"
                       alt="about us"
                       className="img-fluid"
                     /> */}
-                    <LazyLoadImage
-                      placeholderSrc="img/images/about1.jpg"
-                      effect="blur"
-                      width="500"
-                      alt="about us"
-                      className="img-fluid"
-                      src="img/images/about1.jpg"
-                    />
-                  </div>
-                  <div className="col-md-6 col-sm-6 col-6 pl-0 py-0 imgAboutMblspace">
-                    {/* <img
-                      src="img/images/about2.png"
-                      width="500"
-                      alt="about us"
-                      className="img-fluid"
-                    /> */}
-                    <LazyLoadImage
-                      placeholderSrc="img/images/about2.jpg"
-                      effect="blur"
-                      width="500"
-                      alt="about us"
-                      className="img-fluid"
-                      src="img/images/about2.jpg"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
