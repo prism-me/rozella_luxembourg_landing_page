@@ -20,7 +20,7 @@ class CeoSection extends React.Component {
         <section className={"promo-section ptb-50"}>
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="about-content-right">
                   <LazyLoadImage
                     placeholderSrc="img/images/ceo.jpg"
@@ -38,7 +38,7 @@ class CeoSection extends React.Component {
                   /> */}
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-md-6">
                 <div className="section-heading mb-4">
                   <h2 className="maintitle">CEO’s Message</h2>
                   <hr className="hrstyle" />

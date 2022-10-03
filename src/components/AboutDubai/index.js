@@ -55,7 +55,7 @@ class AboutDubai extends React.Component {
                 <div className="row">
                   {images.map((x, i) => (
                     <div
-                      className="col-md-6 pl-0 py-0 imgAboutMblspace"
+                      className="col-md-6 col-sm-6 col-6 pl-0 py-0 imgAboutMblspace"
                       key={i}
                     >
                       {/* <img
@@ -79,51 +79,24 @@ class AboutDubai extends React.Component {
                   {isOpen && (
                     <Lightbox
                       mainSrc={images[photoIndex]}
-                      nextSrc={images[(photoIndex + 1) % images.length]}
-                      prevSrc={
-                        images[(photoIndex + images.length - 1) % images.length]
-                      }
+                      // nextSrc={images[(photoIndex + 1) % images.length]}
+                      // prevSrc={
+                      //   images[(photoIndex + images.length - 1) % images.length]
+                      // }
                       onCloseRequest={() => this.setState({ isOpen: false })}
-                      onMovePrevRequest={() =>
-                        this.setState({
-                          photoIndex:
-                            (photoIndex + images.length - 1) % images.length,
-                        })
-                      }
-                      onMoveNextRequest={() =>
-                        this.setState({
-                          photoIndex: (photoIndex + 1) % images.length,
-                        })
-                      }
+                      // onMovePrevRequest={() =>
+                      //   this.setState({
+                      //     photoIndex:
+                      //       (photoIndex + images.length - 1) % images.length,
+                      //   })
+                      // }
+                      // onMoveNextRequest={() =>
+                      //   this.setState({
+                      //     photoIndex: (photoIndex + 1) % images.length,
+                      //   })
+                      // }
                     />
                   )}
-                  {/* <div className="col-md-6 pl-0 py-0 imgAboutMblspace">
-                    <LazyLoadImage
-                      placeholderSrc="img/images/about2.jpg"
-                      effect="blur"
-                      alt="about us"
-                      className="img-fluid"
-                      src="img/images/about2.jpg"
-                    />
-                  </div>
-                  <div className="col-md-6 pl-0 py-0 imgAboutMblspace">
-                    <LazyLoadImage
-                      placeholderSrc="img/images/about1.jpg"
-                      effect="blur"
-                      alt="about us"
-                      className="img-fluid"
-                      src="img/images/about1.jpg"
-                    />
-                  </div>
-                  <div className="col-md-6 pl-0 py-0 imgAboutMblspace">
-                    <LazyLoadImage
-                      placeholderSrc="img/images/about2.jpg"
-                      effect="blur"
-                      alt="about us"
-                      className="img-fluid"
-                      src="img/images/about2.jpg"
-                    />
-                  </div> */}
                 </div>
               </div>
             </div>

@@ -8,34 +8,64 @@ import "react-image-lightbox/style.css";
 
 const images = [
   {
-    title: "Photo Gallery",
-    subtitle: "Lorem Ipsum Event",
-    image: "img/images/galleryimg1.jpg",
+    title: "Sobha Hartland",
+    image: "img/images/SOBHA_HARTLAND1.jpg",
   },
   {
-    title: "Photo Gallery",
-    subtitle: "Lorem Ipsum Event",
-    image: "img/images/galleryimg2.jpg",
+    title: "Sobha Hartland",
+    image: "img/images/SOBHA_HARTLAND2.jpg",
   },
   {
-    title: "Photo Gallery",
-    subtitle: "Lorem Ipsum Event",
-    image: "img/images/galleryimg3.jpg",
+    title: "Sobha Hartland",
+    image: "img/images/SOBHA_HARTLAND3.jpg",
   },
   {
-    title: "Photo Gallery",
-    subtitle: "Lorem Ipsum Event",
-    image: "img/images/galleryimg1.jpg",
+    title: "Creek Vistas",
+    image: "img/images/CREEK_VISTAS1.jpg",
   },
   {
-    title: "Photo Gallery",
-    subtitle: "Lorem Ipsum Event",
-    image: "img/images/galleryimg2.jpg",
+    title: "Creek Vistas",
+    image: "img/images/CREEK_VISTAS2.jpg",
   },
   {
-    title: "Photo Gallery",
-    subtitle: "Lorem Ipsum Event",
-    image: "img/images/galleryimg3.jpg",
+    title: "Creek Vistas",
+    image: "img/images/CREEK_VISTAS3.jpg",
+  },
+  {
+    title: "Creek Vistas",
+    image: "img/images/CREEK_VISTAS4.jpg",
+  },
+  {
+    title: "Gardenia Villas",
+    image: "img/images/GARDENIA_VILLAS1.jpg",
+  },
+  {
+    title: "Gardenia Villas",
+    image: "img/images/GARDENIA_VILLAS2.jpg",
+  },
+  {
+    title: "Gardenia Villas",
+    image: "img/images/GARDENIA_VILLAS3.jpg",
+  },
+  {
+    title: "Gardenia Villas",
+    image: "img/images/GARDENIA_VILLAS4.jpg",
+  },
+  {
+    title: "Waterfront Villas",
+    image: "img/images/WATERFRONT_VILLAS1.jpg",
+  },
+  {
+    title: "Waterfront Villas",
+    image: "img/images/WATERFRONT_VILLAS2.jpg",
+  },
+  {
+    title: "Waterfront Villas",
+    image: "img/images/WATERFRONT_VILLAS3.jpg",
+  },
+  {
+    title: "Waterfront Villas",
+    image: "img/images/WATERFRONT_VILLAS4.jpg",
   },
 ];
 
@@ -117,7 +147,6 @@ class Gallery extends React.Component {
                       </div>
                       <div className="team-info text-white d-flex flex-column align-items-center justify-content-center">
                         <h5 className="mb-2">{x.title}</h5>
-                        <h6>{x.subtitle}</h6>
                       </div>
                     </div>
                   </div>
@@ -126,26 +155,23 @@ class Gallery extends React.Component {
             </Carousel>
             {isOpen && (
               <Lightbox
-                mainSrc={images.image[photoIndex]}
-                nextSrc={images.image[(photoIndex + 1) % images.image.length]}
-                prevSrc={
-                  images.image[
-                    (photoIndex + images.image.length - 1) % images.image.length
-                  ]
-                }
+                mainSrc={images[photoIndex].image}
+                // nextSrc={images[(photoIndex + 1) % images.length].image}
+                // prevSrc={
+                //   images[(photoIndex + images.length - 1) % images.length].image
+                // }
                 onCloseRequest={() => this.setState({ isOpen: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex:
-                      (photoIndex + images.image.length - 1) %
-                      images.image.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % images.image.length,
-                  })
-                }
+                // onMovePrevRequest={() =>
+                //   this.setState({
+                //     photoIndex:
+                //       (photoIndex + images.length - 1).image % images.length,
+                //   })
+                // }
+                // onMoveNextRequest={() =>
+                //   this.setState({
+                //     photoIndex: (photoIndex + 1).image % images.length,
+                //   })
+                // }
               />
             )}
           </div>

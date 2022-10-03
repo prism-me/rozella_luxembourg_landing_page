@@ -55,7 +55,7 @@ class About extends React.Component {
               </div>
               <div className="col-lg-5 col-md-6 col-sm-12">
                 <div className="row">
-                  <div className="col-md-6 pl-0 py-0 imgAboutMblspace">
+                  <div className="col-md-6 col-sm-6 col-6 pl-0 py-0 imgAboutMblspace">
                     {/* <img
                       src="img/images/about1.png"
                       width="500"
@@ -71,7 +71,7 @@ class About extends React.Component {
                       src="img/images/about1.jpg"
                     />
                   </div>
-                  <div className="col-md-6 pl-0 py-0 imgAboutMblspace">
+                  <div className="col-md-6 col-sm-6 col-6 pl-0 py-0 imgAboutMblspace">
                     {/* <img
                       src="img/images/about2.png"
                       width="500"
