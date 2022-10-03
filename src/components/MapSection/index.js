@@ -27,6 +27,7 @@ class MapSection extends React.Component {
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  className="maponmblscreen"
                 ></iframe>
               </div>
               <div className="col-lg-6 col-md-6 venu-wrape">

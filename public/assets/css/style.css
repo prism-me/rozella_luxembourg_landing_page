@@ -4126,6 +4126,9 @@ button,
     justify-content: center;
     display: flex;
   }
+  .maponmblscreen {
+    height: 300px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
